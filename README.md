@@ -15,9 +15,12 @@ This repository only serves the root and the `404.html` page. Do not add a custo
 
 ## Structure
 
-- `index.html`: the page, in French and English (`FR | EN` switch, `?lang=en`, choice remembered in the browser).
-- `assets/site.css`, `assets/site.js`: styles, language switch and the rotating project graph. No dependency or build step.
+- `index.html`: an animated menu of the open projects and products, in French and English (`FR | EN` switch, `?lang=en`, choice remembered in the browser). Hovering an entry grows a black-and-white point cloud into that project's form; without interaction the menu advances every 6.5 seconds.
+- `assets/home.css`, `assets/lang.js`, `assets/home.js`: styles, language switch, menu and 3D scene. No build step.
+- `assets/vendor/`: three.js r176 (MIT, see `three-LICENSE.txt`), served locally.
 - `404.html`: page shown for unknown paths at the root.
+
+The design comes from a Claude Design canvas. Motion stops when the system asks for reduced motion, and the menu still works without WebGL.
 
 Preview locally:
 

@@ -3,183 +3,96 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yannick Huchard · Projets ouverts</title>
-<meta name="description" content="Travaux ouverts de Yannick Huchard sur l’architecture d’entreprise à l’ère des agents IA : le white paper Enterprise Morphogenesis, AIR, AWA, MellowMesh et d’autres outils.">
+<title>Yannick Huchard · Projets ouverts et produits</title>
+<meta name="description" content="Enterprise Morphogenesis, AIR, AWA, MellowMesh et d’autres projets ouverts de Yannick Huchard sur l’architecture d’entreprise à l’ère des agents IA, et ses apps Fluence, Eloquence et Celine’s Dramas.">
 <link rel="canonical" href="https://yannickhuchard.github.io/">
 <link rel="icon" href="assets/yh-mark.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Yannick Huchard · Projets ouverts">
-<meta property="og:description" content="L’architecture d’entreprise à l’ère des agents IA : white paper, moteurs, spécifications et outils, en accès libre.">
+<meta property="og:title" content="Yannick Huchard · Projets ouverts et produits">
+<meta property="og:description" content="Une théorie de l’entreprise qui se redessine, les outils ouverts pour la mettre en œuvre, et les apps construites avec.">
 <meta property="og:url" content="https://yannickhuchard.github.io/">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&amp;display=swap">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/home.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Yannick Huchard","url":"https://yannickhuchard.github.io/","sameAs":["https://yannickhuchard.com","https://github.com/yannickhuchard"]}
 </script>
 </head>
 <body>
-<a class="skip" href="#projets"><span class="fr">Aller aux projets</span><span class="en">Skip to projects</span></a>
+<div class="yh">
 
-<header class="top">
-  <div class="shell bar">
+  <header class="top">
     <a class="brand" href="./" aria-label="Yannick Huchard">
-      <img src="assets/yh-mark.svg" alt="" width="34" height="34">
+      <img src="assets/yh-mark.svg" alt="" width="36" height="36">
       <span>Yannick Huchard</span>
     </a>
-    <nav class="nav" aria-label="Navigation">
-      <a href="#morphogenesis">White paper</a>
-      <a href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a>
-      <a href="https://yannickhuchard.com">yannickhuchard.com</a>
-    </nav>
-    <div class="langs" role="group" aria-label="Langue / Language">
-      <button type="button" data-set-lang="fr" aria-pressed="true">FR</button>
-      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    <span class="kicker mono"><span class="fr">Projets ouverts · Produits</span><span class="en">Open work · Products</span></span>
+    <div class="top-right">
+      <a class="site" href="https://yannickhuchard.com">yannickhuchard.com</a>
+      <div class="langs" role="group" aria-label="Langue / Language">
+        <button type="button" data-set-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<main>
-  <section class="hero shell">
-    <div class="hero-text">
-      <p class="label up d1"><span class="fr">Projets ouverts · Architecture d’entreprise · Agents IA</span><span class="en">Open work · Enterprise architecture · AI agents</span></p>
-      <h1 class="h1 up d2">
-        <span class="fr">Et si votre entreprise savait se <em>redessiner</em> elle-même&nbsp;?</span>
-        <span class="en">What if your enterprise could <em>redesign</em> itself?</span>
+  <main class="stage">
+    <div class="glbox" aria-hidden="true">
+      <span class="ghost" id="ghost">01</span>
+      <canvas id="gl"></canvas>
+    </div>
+
+    <nav class="menu" id="menu" aria-label="Projets et produits / Projects and products">
+      <h1 class="serif up d1">
+        <span class="fr">Des formes qui apprennent à tenir.</span>
+        <span class="en">Forms that learn to hold.</span>
       </h1>
-      <p class="lead up d3">
-        <span class="fr">Les agents IA accélèrent tout, sauf la cohérence. Ici, je publie en accès libre <b>une théorie, des moteurs et des outils</b> pour que la stratégie reste tenue quand l’entreprise change chaque jour.</span>
-        <span class="en">AI agents speed everything up, except coherence. Here I publish, openly, <b>a theory, engines and tools</b> that keep strategy intact while the enterprise changes every day.</span>
+      <p class="lead up d2">
+        <span class="fr">Une théorie de l’entreprise qui se redessine, les outils ouverts pour la mettre en œuvre, et les apps que je construis avec.</span>
+        <span class="en">A theory of the enterprise that redesigns itself, the open tools to put it to work, and the apps I build with them.</span>
       </p>
-      <div class="actions up d4">
-        <a class="btn" href="enterprise-morphogenesis/landing/">
-          <span class="fr">Découvrir en 3 minutes</span><span class="en">Discover it in 3 minutes</span>
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="btn btn-line" href="#projets"><span class="fr">Voir les projets</span><span class="en">See the projects</span></a>
-      </div>
-    </div>
-    <div class="hero-graph up d3" aria-hidden="true">
-      <svg id="graph" viewBox="-300 -300 600 600" role="presentation"></svg>
-    </div>
-  </section>
 
-  <section class="feature ink" id="morphogenesis">
-    <div class="shell feature-grid">
-      <div>
-        <p class="label">White paper · Version 1.0 · 2026</p>
-        <h2 class="h2">Enterprise Morphogenesis</h2>
-        <p class="lead">
-          <span class="fr">Comment la stratégie devient une <b>forme cible</b>, et comment l’entreprise la garde viable quand tout change. L’architecture d’entreprise n’est plus une carte : c’est le système qui fait croître l’entreprise.</span>
-          <span class="en">How strategy becomes a <b>target form</b>, and how the enterprise keeps it viable as everything changes. Enterprise architecture stops being a map: it becomes the system that grows the enterprise.</span>
-        </p>
-        <div class="actions">
-          <a class="btn btn-light" href="enterprise-morphogenesis/landing/"><span class="fr">Découvrir en 3 minutes</span><span class="en">Discover it in 3 minutes</span></a>
-          <a class="btn btn-line-light" href="enterprise-morphogenesis/"><span class="fr">Lire le white paper</span><span class="en">Read the white paper</span></a>
-        </div>
+      <div class="up d3">
+        <p class="group"><span class="fr">Travaux ouverts</span><span class="en">Open work</span></p>
+        <a class="item on" data-i="0" href="enterprise-morphogenesis/landing/"><span class="n">01</span><span class="t"><i></i>Enterprise Morphogenesis</span><span class="k">White paper · 2026</span></a>
+        <a class="item" data-i="1" href="https://github.com/yannickhuchard/air-engine"><span class="n">02</span><span class="t"><i></i>AIR</span><span class="k">Architecture · Python</span></a>
+        <a class="item" data-i="2" href="https://github.com/yannickhuchard/agentic-workflow-architecture"><span class="n">03</span><span class="t"><i></i>AWA</span><span class="k"><span class="fr">Workflows agentiques</span><span class="en">Agentic workflows</span></span></a>
+        <a class="item" data-i="3" href="https://github.com/yannickhuchard/mellowmesh"><span class="n">04</span><span class="t"><i></i>MellowMesh</span><span class="k">Agents · Rust</span></a>
+        <a class="item" data-i="4" href="https://github.com/yannickhuchard/build_vs_buy"><span class="n">05</span><span class="t"><i></i>Build vs Buy</span><span class="k"><span class="fr">Skill · Décision</span><span class="en">Skill · Decision</span></span></a>
+        <a class="item" data-i="5" href="semantic-id-generator/"><span class="n">06</span><span class="t"><i></i>Semantic ID Generator</span><span class="k">npm · Node.js</span></a>
+        <a class="item" data-i="6" href="https://github.com/yannickhuchard/Safe-AI-for-Business"><span class="n">07</span><span class="t"><i></i>Safe AI for Business</span><span class="k"><span class="fr">Guide · IA responsable</span><span class="en">Guide · Responsible AI</span></span></a>
       </div>
-      <div class="feature-side">
-        <ol class="steps">
-          <li><b>01</b><span class="fr">Traduire la stratégie en forme cible, sur une page.</span><span class="en">Turn strategy into a one-page target form.</span></li>
-          <li><b>02</b><span class="fr">Mettre les règles dans les outils, pas dans les documents.</span><span class="en">Put the rules in the tools, not in documents.</span></li>
-          <li><b>03</b><span class="fr">Mesurer la dérive et corriger en continu.</span><span class="en">Measure drift and correct it continuously.</span></li>
-        </ol>
-        <div class="term">
-          <p class="term-head"><span class="fr">Rendre le white paper actionnable avec votre agent</span><span class="en">Make the paper actionable with your agent</span></p>
-          <div class="term-line">
-            <code id="cmd">npx skills add yannickhuchard/enterprise-morphogenesis</code>
-            <button type="button" class="copy" data-copy="#cmd"><span class="fr">Copier</span><span class="en">Copy</span></button>
-          </div>
-        </div>
-        <p class="feature-links">
-          <a href="enterprise-morphogenesis/presentations/Enterprise_Morphogenesis_Wide_Adoption_v1_0.pptx"><span class="fr">Présentation (tous publics)</span><span class="en">Deck (everyone)</span></a>
-          <a href="enterprise-morphogenesis/presentations/Enterprise_Morphogenesis_Specialists_v1_0.pptx"><span class="fr">Présentation (spécialistes)</span><span class="en">Deck (specialists)</span></a>
-          <a href="https://github.com/yannickhuchard/enterprise-morphogenesis">GitHub</a>
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <section class="section shell" id="projets">
-    <p class="label"><span class="fr">Autres projets ouverts</span><span class="en">More open projects</span></p>
-    <h2 class="h2"><span class="fr">De la théorie à l’outil.</span><span class="en">From theory to tooling.</span></h2>
-    <div class="cards">
-      <article class="card" data-node="air">
-        <p class="tag">Architecture · Python · Apache-2.0</p>
-        <h3>AIR</h3>
-        <p class="sub">Architecture Intermediate Representation</p>
-        <p>
-          <span class="fr">Transformer une idée métier en architecture que l’on peut comprendre, vérifier et construire. Un moteur local et un plugin pour votre assistant IA.</span>
-          <span class="en">Turn a business idea into an architecture people can understand, check and build. A local engine and a plugin for your AI assistant.</span>
-        </p>
-        <p class="links"><a href="https://github.com/yannickhuchard/air-engine"><span class="fr">Moteur</span><span class="en">Engine</span></a><a href="https://github.com/yannickhuchard/air-plugin">Plugin</a></p>
-      </article>
-      <article class="card" data-node="awa">
-        <p class="tag">Workflows · Apache-2.0</p>
-        <h3>AWA</h3>
-        <p class="sub">Agentic Workflow Architecture</p>
-        <p>
-          <span class="fr">Une spécification pour des processus métier où agents IA, humains, robots et systèmes travaillent ensemble, de façon observable.</span>
-          <span class="en">A specification for business processes where AI agents, humans, robots and systems work together, in a way you can observe.</span>
-        </p>
-        <p class="links"><a href="https://github.com/yannickhuchard/agentic-workflow-architecture">GitHub</a></p>
-      </article>
-      <article class="card" data-node="mesh">
-        <p class="tag">Agents · Rust · MIT</p>
-        <h3>MellowMesh</h3>
-        <p class="sub"><span class="fr">Coordination d’agents</span><span class="en">Agent coordination</span></p>
-        <p>
-          <span class="fr">Vos agents, joignables de partout : ils se partagent les tâches et vous demandent votre accord avant toute action sensible. Tout reste sur votre machine.</span>
-          <span class="en">Your agents, reachable from anywhere: they share tasks and ask for your approval before anything sensitive. Everything stays on your machine.</span>
-        </p>
-        <p class="links"><a href="https://github.com/yannickhuchard/mellowmesh">GitHub</a></p>
-      </article>
-      <article class="card" data-node="sid">
-        <p class="tag">Node.js · npm · MIT</p>
-        <h3>Semantic ID Generator</h3>
-        <p class="sub"><span class="fr">Identifiants sémantiques</span><span class="en">Semantic identifiers</span></p>
-        <p>
-          <span class="fr">Des identifiants lisibles par l’humain et compris par la machine, uniques et cohérents d’un système à l’autre.</span>
-          <span class="en">Identifiers people can read and machines understand, unique and consistent across systems.</span>
-        </p>
-        <p class="links"><a href="semantic-id-generator/"><span class="fr">Site</span><span class="en">Site</span></a><a href="https://www.npmjs.com/package/semantic-id-generator">npm</a><a href="https://github.com/yannickhuchard/semantic-id-generator">GitHub</a></p>
-      </article>
-      <article class="card" data-node="safe">
-        <p class="tag"><span class="fr">Guide · MIT</span><span class="en">Guidelines · MIT</span></p>
-        <h3>Safe AI for Business</h3>
-        <p class="sub"><span class="fr">IA responsable</span><span class="en">Responsible AI</span></p>
-        <p>
-          <span class="fr">Un cadre ouvert pour adopter l’IA en entreprise de façon responsable, à adapter et à partager.</span>
-          <span class="en">An open framework to adopt AI responsibly in your organization, to adapt and share.</span>
-        </p>
-        <p class="links"><a href="https://github.com/yannickhuchard/Safe-AI-for-Business">GitHub</a></p>
-      </article>
-      <a class="card card-more" href="https://github.com/yannickhuchard?tab=repositories">
-        <p class="tag">GitHub</p>
-        <h3><span class="fr">Tous les dépôts</span><span class="en">All repositories</span></h3>
-        <p><span class="fr">Le code, les versions et les contributions.</span><span class="en">Code, releases and contributions.</span></p>
-        <svg class="ic arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      <div class="up d4">
+        <p class="group"><span class="fr">Produits</span><span class="en">Products</span></p>
+        <a class="item" data-i="7" href="https://fluencereader.com"><span class="n">08</span><span class="t"><i></i>Fluence</span><span class="k"><span class="fr">App · Lecture</span><span class="en">App · Reading</span></span></a>
+        <a class="item" data-i="8" href="https://eloquence.lu"><span class="n">09</span><span class="t"><i></i>Eloquence</span><span class="k"><span class="fr">App · Écriture</span><span class="en">App · Writing</span></span></a>
+        <a class="item" data-i="9" href="https://celinesdramas.com"><span class="n">10</span><span class="t"><i></i>Celine’s Dramas</span><span class="k"><span class="fr">App · Séries</span><span class="en">App · Series</span></span></a>
+      </div>
+    </nav>
+
+    <aside class="cap b" id="cap" aria-live="polite">
+      <div class="cap-head mono"><span id="cap-tag">White paper · 2026</span><span><span id="cap-num">01</span> / 10</span></div>
+      <h2 class="serif" id="cap-name">Enterprise Morphogenesis</h2>
+      <p id="cap-desc">Comment la stratégie devient une forme cible, et comment l’entreprise la garde viable quand tout change.</p>
+      <a class="go" id="cap-go" href="enterprise-morphogenesis/landing/"><span id="cap-cta">Découvrir en 3 minutes</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
-    </div>
-  </section>
-</main>
+      <div class="bar"><span></span></div>
+    </aside>
+  </main>
 
-<footer class="foot">
-  <div class="shell foot-grid">
-    <div>
-      <p class="brand"><img src="assets/yh-mark.svg" alt="" width="28" height="28"><span>Yannick Huchard</span></p>
-      <p class="muted"><a href="https://yannickhuchard.com">yannickhuchard.com</a> · <a href="https://github.com/yannickhuchard">github.com/yannickhuchard</a></p>
-    </div>
-    <div>
-      <p class="label"><span class="fr">Confidentialité des applications</span><span class="en">App privacy policies</span></p>
-      <p class="muted"><a href="fluence-privacy/">Fluence</a> · <a href="esmma-itthaque-privacy/">Esmma &amp; Itthaque</a></p>
-    </div>
-    <p class="muted copy-note">© 2026 Yannick Huchard</p>
-  </div>
-</footer>
+  <footer class="foot">
+    <span>© 2026 Yannick Huchard</span>
+    <a href="https://github.com/yannickhuchard">GitHub</a>
+    <a href="https://yannickhuchard.com">yannickhuchard.com</a>
+    <span class="privacy"><span class="fr">Confidentialité :</span><span class="en">Privacy:</span> <a href="fluence-privacy/">Fluence</a> · <a href="esmma-itthaque-privacy/">Esmma &amp; Itthaque</a></span>
+  </footer>
+</div>
 
-<script src="assets/site.js" defer></script>
+<script src="assets/lang.js"></script>
+<script type="module" src="assets/home.js"></script>
 </body>
 </html>
